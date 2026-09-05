@@ -12,19 +12,19 @@ import sys
 # 예: https://drive.google.com/file/d/1aBcDeFgHiJ... 에서 '1aBcDeFgHiJ...' 가 고유 ID입니다.
 # 빈 칸으로 두면 앱 자체 내장 플레이스홀더 아이콘이 기본 표시됩니다.
 GDRIVE_FILE_IDS = {
-    "LU9.png": "1VU9zgUa_XRsTQ4YAV-JrYCmibcDH1jN1",    # 태연 (태음인 평소)
-    "LU7.png": "1teSFmDtMQ8N03Oe2WbwG5h29AWkx3sQx",    # 열결 (태음인 평소)
-    "LR3.png": "1WjeuZHNkp4IB7Qz0pob5TVt3GilgH9Kp",    # 태충 (태음인 치료)
-    "LR2.png": "1uQ0Jkz5RwgtY_ebKSI7SEac_MBVnmMn-",    # 행간 (태음인 치료)
-    "SP6.png": "1qMIcTi35Ck8km9KcehY56vCv48JloLDM",    # 삼음교 (소음인/태양인 평소)
-    "CV6.png": "1xyvD-YHRHBGfq9cvJRO9DYwTJqrdRxeM",    # 기해 (소음인 평소)
-    "LI4.png": "1-lk9zMhKnuOqnSGEDBHg1GPaoVnCy_mk",    # 합곡 (소음인/태양인 치료)
-    "LU11.png": "11ZZu7A_YT-2iY8fNwT7hD9ghMGFOT3TQ",   # 소상 (소음인/태양인 치료)
-    "SP9.png": "1g6FRjkvr4E5Z7OiZCLcwAjuEco0ic_rK",    # 음릉천 (소양인 평소)
-    "PC6.png": "1rf1j8-xFurVBvw5ooqhiI5oxgo3PnzqL",    # 내관 (소양인 평소)
-    "ST36.png": "15uMHdutKXVX_blowl188q56XYuHzie0m",   # 족삼리 (소양인 치료)
-    "TE6.png": "1epLxmBRrBsEo1gb3nljh39xPzs7lBN19",    # 지구 (소양인 치료)
-    "BL23.png": "1dUFiwR_TsTELeUZnYsGd56Hkil8UVT7a"    # 신수 (태양인 평소)
+    "LU9.png": "",    # 태연 (태음인 평소)
+    "LU7.png": "",    # 열결 (태음인 평소)
+    "LR3.png": "",    # 태충 (태음인 치료)
+    "LR2.png": "",    # 행간 (태음인 치료)
+    "SP6.png": "",    # 삼음교 (소음인/태양인 평소)
+    "CV6.png": "",    # 기해 (소음인 평소)
+    "LI4.png": "",    # 합곡 (소음인/태양인 치료)
+    "LU11.png": "",   # 소상 (소음인/태양인 치료)
+    "SP9.png": "",    # 음릉천 (소양인 평소)
+    "PC6.png": "",    # 내관 (소양인 평소)
+    "ST36.png": "",   # 족삼리 (소양인 치료)
+    "TE6.png": "",    # 지구 (소양인 치료)
+    "BL23.png": ""    # 신수 (태양인 평소)
 }
 
 def get_gdrive_image_url(image_filename):
@@ -351,11 +351,12 @@ with st.sidebar:
     st.write("본 앱은 동무 이제마 선생의 **『동의수세보원』** 원전 및 전문 한방 경혈·약재 데이터베이스를 기반으로 구축되었습니다.")
     st.divider()
     
-    st.markdown("### ☁️ 구글 드라이브 경혈맵 연동 방법")
-    st.info("""
-    1. 구글 드라이브에 **'경혈맵'** 폴더를 만들고 13개 이미지(예: `LU9.png`, `LR3.png` 등)를 업로드합니다.
-    2. 폴더 전체의 공유 설정을 **"링크가 있는 모든 사용자 - 뷰어"**로 변경합니다.
-    3. 각 파일의 **고유 ID**를 복사하여 코드 상단의 `GDRIVE_FILE_IDS` 딕셔너리에 매칭하여 붙여넣으세요!
+    st.markdown("### ⚠️ 자가 지압 시 주의사항")
+    st.warning("""
+    - **식사 직후**: 식후 1시간 이내에는 소화에 지장을 줄 수 있으므로 강한 지압을 피합니다.
+    - **임산부 금기**: '합곡(LI4)'과 '삼음교(SP6)'는 자궁을 수축시키는 작용이 있어 임산부는 절대 지압하거나 침뜸을 하지 않습니다.
+    - **자극 강도**: 너무 아프게 누르기보다 3-5초간 뻐근한 느낌(득기감)이 드는 수준으로 부드럽게 지긋이 누르세요.
+    - **상처 부위**: 염증, 상처, 혹은 부어오른 관절 부위는 직접 압박하지 않습니다.
     """)
     st.divider()
     st.markdown("### 📱 주요 기능")
