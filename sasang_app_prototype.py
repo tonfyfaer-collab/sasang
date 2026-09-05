@@ -24,7 +24,7 @@ GDRIVE_FILE_IDS = {
     "PC6.png": "1rf1j8-xFurVBvw5ooqhiI5oxgo3PnzqL",    # 내관 (소양인 평소)
     "ST36.png": "15uMHdutKXVX_blowl188q56XYuHzie0m",   # 족삼리 (소양인 치료)
     "TE6.png": "1epLxmBRrBsEo1gb3nljh39xPzs7lBN19",    # 지구 (소양인 치료)
-    "BL23.png": "1dUFiwR_TsTELeUZnYsGd56Hkil8UVT7a"    # 신수 (태양인 평소)
+    "BL23.png": "1dUFiwR_TsTELeUZnYsGd56Hkil8UVT7a",    # 신수 (태양인 평소)
     
     # 5대 증상 확장용 추가 경혈 이미지
     "GB20.png": "1aXCkct9B0ITr7dN0mu2Egr4ieJg9ZIj2",                                  # 풍지 (태음인 두통)
