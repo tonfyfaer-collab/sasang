@@ -12,19 +12,19 @@ import sys
 # 예: https://drive.google.com/file/d/1aBcDeFgHiJ... 에서 '1aBcDeFgHiJ...' 가 고유 ID입니다.
 # 빈 칸으로 두면 앱 자체 내장 플레이스홀더 아이콘이 기본 표시됩니다.
 GDRIVE_FILE_IDS = {
-    "LU9.png": "",    # 태연 (태음인 평소)
-    "LU7.png": "",    # 열결 (태음인 평소)
-    "LR3.png": "",    # 태충 (태음인 치료)
-    "LR2.png": "",    # 행간 (태음인 치료)
-    "SP6.png": "",    # 삼음교 (소음인/태양인 평소)
-    "CV6.png": "",    # 기해 (소음인 평소)
-    "LI4.png": "",    # 합곡 (소음인/태양인 치료)
-    "LU11.png": "",   # 소상 (소음인/태양인 치료)
-    "SP9.png": "",    # 음릉천 (소양인 평소)
-    "PC6.png": "",    # 내관 (소양인 평소)
-    "ST36.png": "",   # 족삼리 (소양인 치료)
-    "TE6.png": "",    # 지구 (소양인 치료)
-    "BL23.png": ""    # 신수 (태양인 평소)
+    "LU9.png": "1VU9zgUa_XRsTQ4YAV-JrYCmibcDH1jN1",    # 태연 (태음인 평소)
+    "LU7.png": "1teSFmDtMQ8N03Oe2WbwG5h29AWkx3sQx",    # 열결 (태음인 평소)
+    "LR3.png": "1WjeuZHNkp4IB7Qz0pob5TVt3GilgH9Kp",    # 태충 (태음인 치료)
+    "LR2.png": "1uQ0Jkz5RwgtY_ebKSI7SEac_MBVnmMn-",    # 행간 (태음인 치료)
+    "SP6.png": "1qMIcTi35Ck8km9KcehY56vCv48JloLDM",    # 삼음교 (소음인/태양인 평소)
+    "CV6.png": "1xyvD-YHRHBGfq9cvJRO9DYwTJqrdRxeM",    # 기해 (소음인 평소)
+    "LI4.png": "1-lk9zMhKnuOqnSGEDBHg1GPaoVnCy_mk",    # 합곡 (소음인/태양인 치료)
+    "LU11.png": "11ZZu7A_YT-2iY8fNwT7hD9ghMGFOT3TQ",   # 소상 (소음인/태양인 치료)
+    "SP9.png": "1g6FRjkvr4E5Z7OiZCLcwAjuEco0ic_rK",    # 음릉천 (소양인 평소)
+    "PC6.png": "1rf1j8-xFurVBvw5ooqhiI5oxgo3PnzqL",    # 내관 (소양인 평소)
+    "ST36.png": "15uMHdutKXVX_blowl188q56XYuHzie0m",   # 족삼리 (소양인 치료)
+    "TE6.png": "1epLxmBRrBsEo1gb3nljh39xPzs7lBN19",    # 지구 (소양인 치료)
+    "BL23.png": "1dUFiwR_TsTELeUZnYsGd56Hkil8UVT7a"    # 신수 (태양인 평소)
 }
 
 def get_gdrive_image_url(image_filename):
