@@ -35,7 +35,7 @@ GDRIVE_FILE_IDS = {
 }
 
 def get_gdrive_image_url(image_filename):
-    \"\"\"구글 드라이브 고유 파일 ID를 활용해 보안에 강한 다이렉트 이미지 URL을 생성합니다.\"\"\"
+    "구글 드라이브 고유 파일 ID를 활용해 보안에 강한 다이렉트 이미지 URL을 생성합니다."
     file_id = GDRIVE_FILE_IDS.get(image_filename, "")
     if file_id and file_id.strip():
         return f"https://lh3.googleusercontent.com/d/{file_id.strip()}"
