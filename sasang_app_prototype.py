@@ -50,7 +50,7 @@ st.set_page_config(
 )
 
 # Custom Styling (CSS)
-st.markdown(\"\"\"
+st.markdown(
 <style>
     .main-title {
         font-size: 2.2rem;
@@ -91,7 +91,7 @@ st.markdown(\"\"\"
         margin-top: 15px;
     }
 </style>
-\"\"\", unsafe_allow_html=True)
+, unsafe_allow_html=True)
 
 # Cache Symptom DB
 @st.cache_data
