@@ -65,9 +65,23 @@ CONSTITUTION_DATA = {
 }
 
 def render_result(symptom_df, get_gdrive_image_url):
-    final_constitution = st.session_state.constitution_result
+    # 1. 원래 진단받은 체질을 기억합니다.
+    diagnosed_const = st.session_state.constitution_result
+    
+    # 2. 결과 페이지 상단에 다른 체질을 수동 선택할 수 있는 드롭다운 메뉴를 배치합니다.
+    const_list = ["태음인", "소음인", "소양인", "태양인"]
+    final_constitution = st.selectbox(
+        "🔍 [체질 강제 변경] 다른 사상체질의 건강 가이드도 구경해 보세요!",
+        options=const_list,
+        index=const_list.index(diagnosed_const)
+    )
+    
     const_data = CONSTITUTION_DATA[final_constitution]
     
+    # 3. 만약 원래 내 실제 진단 결과와 다른 체질을 선택했다면 파란색 안내 배너를 띄워줍니다.
+    if final_constitution != diagnosed_const:
+        st.info(f"💡 현재 실제 진단 결과인 **{diagnosed_const}** 대신, 임의로 선택하신 **{final_constitution}**의 건강 가이드를 보고 계십니다.")
+        
     # Restart Button
     if st.button("⬅️ 처음부터 다시 자가 진단하기", type="secondary"):
         st.session_state.step = "intro"
