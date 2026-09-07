@@ -9,27 +9,27 @@ import pandas as pd
 # ==============================================================================
 GDRIVE_FILE_IDS = {
     # 13개 기본 핵심 경혈 이미지
-    "LU9.png": "11ZZu7A_YT-2iY8fNwT7hD9ghMGFOT3TQ",   # 태연 (태음인 평소) - 예시 ID 적용됨
-    "LU7.png": "",                                   # 열결 (태음인 평소)
-    "LR3.png": "",                                   # 태충 (태음인 치료 / 변비)
-    "LR2.png": "",                                   # 행간 (태음인 치료)
-    "SP6.png": "",                                   # 삼음교 (소음인 평소 / 태양인 평소 / 요통)
-    "CV6.png": "",                                   # 기해 (소음인 평소)
-    "LI4.png": "",                                   # 합곡 (소음인 치료 / 태양인 치료 / 두통)
-    "LU11.png": "",                                  # 소상 (소음인 치료 / 태양인 치료)
-    "SP9.png": "",                                   # 음릉천 (소양인 평소 / 변비)
-    "PC6.png": "",                                   # 내관 (소양인 평소 / 소화불량)
-    "ST36.png": "",                                  # 족삼리 (소양인 치료 / 소화불량)
-    "TE6.png": "",                                   # 지구 (소양인 치료 / 두통 / 변비)
-    "BL23.png": "",                                  # 신수 (태양인 평소 / 요통)
+    "LU9.png": "1VU9zgUa_XRsTQ4YAV-JrYCmibcDH1jN1",    # 태연 (태음인 평소)
+    "LU7.png": "1teSFmDtMQ8N03Oe2WbwG5h29AWkx3sQx",    # 열결 (태음인 평소)
+    "LR3.png": "1WjeuZHNkp4IB7Qz0pob5TVt3GilgH9Kp",    # 태충 (태음인 치료)
+    "LR2.png": "1uQ0Jkz5RwgtY_ebKSI7SEac_MBVnmMn-",    # 행간 (태음인 치료)
+    "SP6.png": "1qMIcTi35Ck8km9KcehY56vCv48JloLDM",    # 삼음교 (소음인/태양인 평소)
+    "CV6.png": "1xyvD-YHRHBGfq9cvJRO9DYwTJqrdRxeM",    # 기해 (소음인 평소)
+    "LI4.png": "1-lk9zMhKnuOqnSGEDBHg1GPaoVnCy_mk",    # 합곡 (소음인/태양인 치료)
+    "LU11.png": "11ZZu7A_YT-2iY8fNwT7hD9ghMGFOT3TQ",   # 소상 (소음인/태양인 치료)
+    "SP9.png": "1g6FRjkvr4E5Z7OiZCLcwAjuEco0ic_rK",    # 음릉천 (소양인 평소)
+    "PC6.png": "1rf1j8-xFurVBvw5ooqhiI5oxgo3PnzqL",    # 내관 (소양인 평소)
+    "ST36.png": "15uMHdutKXVX_blowl188q56XYuHzie0m",   # 족삼리 (소양인 치료)
+    "TE6.png": "1epLxmBRrBsEo1gb3nljh39xPzs7lBN19",    # 지구 (소양인 치료)
+    "BL23.png": "1dUFiwR_TsTELeUZnYsGd56Hkil8UVT7a",    # 신수 (태양인 평소)
     
     # 5대 증상 확장용 추가 경혈 이미지
-    "GB20.png": "",                                  # 풍지 (태음인 두통)
-    "GV20.png": "",                                  # 백회 (소음인 두통 / 태양인 두통)
-    "EXHN5.png": "",                                 # 태양 (소양인 두통)
-    "ST25.png": "",                                  # 천추 (태음인 변비)
-    "HT7.png": "",                                   # 신문 (태음인/소음인/소양인 두근거림)
-    "BL40.png": "",                                  # 위중 (태음인/소음인/소양인 요통)
+    "GB20.png": "1aXCkct9B0ITr7dN0mu2Egr4ieJg9ZIj2",   # 풍지 (태음인 두통)
+    "GV20.png": "1Uw2fFJnue8Q4Ern_SmkIgP4w4YE2NheW",   # 백회 (소음인 두통 / 태양인 두통)
+    "EXHN5.png": "1C8OBPEMATmgtM2fXwcwBKkb7DLHL3g4C",   # 태양 (소양인 두통)
+    "ST25.png": "1J6hpGETULMqx1eD7JcBBQxsKUsU-nuaT",   # 천추 (태음인 변비)
+    "HT7.png": "1K3d9JahX0OjA0OJoMuaefe45cREgi3yl",   # 신문 (태음인/소음인/소양인 두근거림)
+    "BL40.png": "15Pqh2nBAPi2ZGRcfTx5Rovy7IAA5G9b2",   # 위중 (태음인/소음인/소양인 요통)
 }
 
 def get_gdrive_image_url(image_filename):
